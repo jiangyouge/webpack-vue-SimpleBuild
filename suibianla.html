@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <form action="" id="myForm">
+    <input type="text" id="inp">
+    <label for="inp"></label>
+    <div class="spanl">666666666666</div>
+  </form>
+</body>
+<script src="statics/js/jquery-2.1.4.min.js"></script>
+<script>
+  // var inp = document.getElementById('inp');
+  // var spl = document.getElementsByClassName('spanl');
+  // console.log(spl)
+  $('#inp').on('focus',function(){
+    $('.spanl').html('5555555555555555')
+  }).on('blur',function(){
+    aaa()
+  })
+  function aaa(){
+    document.getElementById("myForm").reset()
+  }
+
+</script>
+</html>
