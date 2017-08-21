@@ -1,6 +1,7 @@
 //1.0 导入相关包
 import Vue from 'vue';
 import vueRouter from 'vue-router'
+import Vuex from 'vuex'
 // import vueResource from 'vue-resource'
 import axios from 'axios'
 
@@ -16,6 +17,8 @@ import '../statics/mui/css/icons-extra.css'
 
 import mintUI from 'mint-ui'
 Vue.use(mintUI);
+
+Vue.use(Vuex)
 // Vue.use(axios)
 
 
