@@ -39,24 +39,28 @@ Vue.filter('tolowercase',function(input){
 
 
 //3.0 定义路由规则对象
+import routes from './router/router.js'
 import App from './App.vue'
-import Home from './components/Home/Home.vue';
-import member from './components/member/member.vue';
-import shopcar from './components/shopcar/shopcar.vue';
-import search from './components/search/search.vue';
+// import Home from './components/Home/Home.vue';
+// import member from './components/member/member.vue';
+// import shopcar from './components/shopcar/shopcar.vue';
+// import search from './components/search/search.vue';
 
-let router = new vueRouter({
-  linkActiveClass:'mui-active',
-  routes:[
-    //表示浏览器如果访问的是http://localhost:3008/#/ 或者http://localhost:3008这种形式
-    //则直接跳转到http://localhost:3008/#/Home，那么vue-router就会自动加载Home
-    {name:'root',path:'/',redirect:'/Home'}, 
-    {name:'home',path:'/Home',component:Home},
-    {name:'member',path:'/member',component:member},
-    {name:'shopcar',path:'/shopcar',component:shopcar},
-    {name:'search',path:'/search',component:search}
-  ]
-});
+const router = new vueRouter({
+  routes
+})
+// let router = new vueRouter({
+//   linkActiveClass:'mui-active',
+//   routes:[
+//     //表示浏览器如果访问的是http://localhost:3008/#/ 或者http://localhost:3008这种形式
+//     //则直接跳转到http://localhost:3008/#/Home，那么vue-router就会自动加载Home
+//     {name:'root',path:'/',redirect:'/Home'}, 
+//     {name:'home',path:'/Home',component:Home},
+//     {name:'member',path:'/member',component:member},
+//     {name:'shopcar',path:'/shopcar',component:shopcar},
+//     {name:'search',path:'/search',component:search}
+//   ]
+// });
 
 //4.0 使用router
 new Vue({
