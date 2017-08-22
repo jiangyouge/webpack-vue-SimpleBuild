@@ -44,3 +44,5 @@
 * 可将路径作为路径上传给mapState、mapGetters、mapActions、mapMutations
 * 在store创建后使用store.registerModule来注册模块
 
+//vue-home
+
