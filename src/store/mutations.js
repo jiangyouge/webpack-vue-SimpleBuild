@@ -1,13 +1,22 @@
- 驱动器 H 中的卷没有标签。
- 卷的序列号是 0000-4823
-
- H:\partCode\webpack\src\store 的目录
-
-2017/08/22  15:52    <DIR>          .
-2017/08/22  15:52    <DIR>          ..
-2017/08/22  15:52               404 action.js
-2017/08/22  15:51                 0 dir
-2017/08/22  15:52               357 index.js
-2017/08/22  15:52                 0 mutations.js
-               4 个文件            761 字节
-               2 个目录 676,815,179,776 可用字节
+const ADD_ITEMNUM = 'ADD_ITEMNUM'
+const REMBER_ANSWER = 'REMBER_ANSWER'
+const REMBER_TIME = 'REMBER_TIME'
+const INITIALLIZE_DATA = 'INITIALLIZE_DATA'
+export default {
+  [ADD_ITEMNUM](state, num) {
+    state.itemNum += num
+  },
+  [REMBER_ANSWER](state, id){
+    state.answerid.push(id)
+  },
+  [REMBER_TIME](state) {
+    state.timer = setInterval(() => {
+      state.allTime++
+    }, 1000)
+  },
+  [INITIALLIZE_DATA](state) {
+    state.itemNum = 1;
+    state.allTime = 0;
+    state.answerid = [];
+  }
+}

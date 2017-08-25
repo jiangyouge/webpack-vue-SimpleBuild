@@ -1,16 +1,20 @@
 <template>
-  <div class="tmpl">
-    home
-    6666666666  
+  <div class="home_container">
+    <itemcontainer father-component="home"></itemcontainer>
   </div>
 </template>
 
 <script>
-export default{
-  data(){
-    return {
-      
-    }
+
+import itemcontainer from '../../common/itemcontainer.vue'
+
+export default {
+  name: 'home',
+  components: {
+    itemcontainer
+  },
+  created(){
+    
   }
 }
   

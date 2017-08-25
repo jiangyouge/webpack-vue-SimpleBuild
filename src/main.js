@@ -41,6 +41,7 @@ Vue.filter('tolowercase',function(input){
 //3.0 定义路由规则对象
 import routes from './router/router.js'
 import App from './App.vue'
+import store from './store/'
 // import Home from './components/Home/Home.vue';
 // import member from './components/member/member.vue';
 // import shopcar from './components/shopcar/shopcar.vue';
@@ -65,6 +66,7 @@ const router = new vueRouter({
 //4.0 使用router
 new Vue({
   el:'#app',
+  store,
   router,
   render:c=>c(App)
 });

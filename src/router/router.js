@@ -7,6 +7,15 @@ export default [{
     path: '',
     component: r => require.ensure([], () => r(require('../components/home/Home.vue')), 'home')
   },{
+    path: '/home',
+    component: r => require.ensure([], () => r(require('../components/Home/Home.vue')), 'home')
+  },{
+    path: '/item',
+    component: r => require.ensure([], () => r(require('../components/item/item.vue')), 'item') 
+  },{
+    path: '/score',
+    component: r => require.ensure([], () => r(require('../components/score/score.vue')), 'score') 
+  },{
     path: '/member',
     component: r => require.ensure([], () => r(require('../components/member/member.vue')), 'member')
   },{

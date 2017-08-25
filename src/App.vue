@@ -1,4 +1,4 @@
-<template>
+<template> 
   <div class="app">
   <!-- 整个系统的头部 -->
   <mt-header fixed title="vuejs内容管理系统"></mt-header>
@@ -40,11 +40,11 @@
 
 
   export default{
-    data(){
-      return {
+    // data(){
+    //   return {
 
-      }
-    }   
+    //   }
+    // }   
   }
 
 </script>
